@@ -9,6 +9,7 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
+import '../App.css';
 import React from 'react';
 
 
@@ -56,10 +57,10 @@ const MyLayout = () => (
     >
       <div className="logo" />
      
-      <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']} >
+      <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} >
       
           <Menu.Item key="1">
-            <Link to="/exchanges"> Exchange List</Link>
+            <Link to="/"> Exchange List</Link>
           </Menu.Item>
           <Menu.Item key="2">
             <Link to="/markets">Market List</Link>
@@ -98,7 +99,7 @@ const MyLayout = () => (
         >
           {/* <BrowserRouter> */}
           <Routes>
-            <Route path="/exchanges" element={<Exchanges />} />
+            <Route path="/" element={<Exchanges />} />
             <Route path="/markets" element={<Markets />} />
             <Route path="/exchangemarket" element={<TabLayout />} />
           </Routes>

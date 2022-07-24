@@ -10,6 +10,10 @@
   background: #fff;
 }
 
+.ant-menu {
+  margin-top: 40%;
+}
+
 
 /* #components-layout-demo-custom-trigger .trigger {
   padding: 0 24px;
